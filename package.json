@@ -1,0 +1,17 @@
+{
+  "name": "testfrontend",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "gulp": "^3.5.2",
+    "gulp-shell": "^0.2.9",
+    "browserify": "^5.9.3"
+  },
+  "author": "Andrew Zures",
+  "license": "ISC"
+}

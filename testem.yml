@@ -1,0 +1,5 @@
+framework: jasmine
+before_tests: browserify app/src/main.js app/spec/spec_manifest.js -o test_bundle.js
+on_exit: rm -rf test_bundle.js
+serve_files:
+  - test_bundle.js
