@@ -1,5 +1,5 @@
 framework: jasmine
-before_tests: browserify -t coffeeify app/src/main.coffee app/spec/spec_manifest.coffee > test_bundle.js
+before_tests: browserify -t coffeeify app/src/main.coffee app/spec/spec_manifest.coffee -d -o test_bundle.js
 on_exit: rm -rf test_bundle.js
 src_files:
   - app/**

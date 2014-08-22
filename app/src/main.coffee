@@ -1,7 +1,7 @@
-#vendors
-global._ = require('./vendors/underscore.js')
-global.$ = require('./vendors/jquery.js')
-# global.Backbone = require('./vendors/backbone.js')
+#vendors - via npm update
+global._                =   require('underscore')
+global.$                =   require('jquery')
+global.Backbone         =   require('backbone')
 
 Add = require('./dep.coffee')
 
