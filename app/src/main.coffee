@@ -2,7 +2,14 @@
 global._                =   require('underscore')
 global.$                =   require('jquery')
 global.Backbone         =   require('backbone')
+Backbone.$              =   require('jquery')
 
+#root
+global.Diluvia = {
+  Test: {}
+}
+
+require('./backbone_stuff.coffee')
 Add = require('./dep.coffee')
 
 add_plus_1 = (x,y) ->
