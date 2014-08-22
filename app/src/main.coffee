@@ -1,10 +1,7 @@
-dep = require('./dep.coffee')
+Add = require('./dep.coffee')
 
-hello() ->
-  dep.add(1,2)
+hello_there = (x,y) ->
+  Add.add(x,y)
 
-window.print_hello = ->
-  console.log(hello())
-
-module.exports.hello = hello
-module.exports.print_hello = print_hello
+module.exports.hello = 3
+module.exports.hello_there = hello_there

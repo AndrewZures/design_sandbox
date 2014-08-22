@@ -1,9 +1,13 @@
-main = require('../src/main.coffee')
+Main = require('../src/main.coffee')
 
-describe 'a test', ->
+describe 'a test', () ->
 
-  it 'tests', ->
-    expect(main.hello()).toEqual(3)
+  it 'tests', () ->
+    expect(Main.hello + 3).toEqual(6)
 
-  it 'also tests', ->
+  it 'tests', () ->
+    expect(Main.hello_there(3,4) + 3).toEqual(10)
+
+  it 'also tests', () ->
     expect(2+2).toEqual(4)
+
