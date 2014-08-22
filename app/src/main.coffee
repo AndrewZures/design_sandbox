@@ -1,5 +1,7 @@
 #vendors
 global._ = require('./vendors/underscore.js')
+global.$ = require('./vendors/jquery.js')
+# global.Backbone = require('./vendors/backbone.js')
 
 Add = require('./dep.coffee')
 

@@ -18,3 +18,6 @@ describe 'a test', () ->
   it 'also tests', () ->
     expect(2+2).toEqual(4)
 
+  # in progress
+  xit 'does jquery stuff', () ->
+    expect($( ".inner" ).append( "<p>Test</p>" )).toEqual null
