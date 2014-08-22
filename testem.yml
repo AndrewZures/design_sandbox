@@ -1,5 +1,9 @@
 framework: jasmine
 before_tests: browserify -t coffeeify app/src/main.coffee app/spec/spec_manifest.coffee > test_bundle.js
 on_exit: rm -rf test_bundle.js
+src_files:
+  - app/**
+launch_in_dev:
+  - PhantomJS
 serve_files:
   - test_bundle.js
