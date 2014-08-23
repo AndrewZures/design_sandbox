@@ -2,7 +2,7 @@
 global._                =   require('underscore')
 global.$                =   require('jquery')
 global.Backbone         =   require('backbone')
-Backbone.$              =   require('jquery')
+Backbone.$              =   $
 
 #root
 global.Diluvia = {
