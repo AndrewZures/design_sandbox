@@ -42,3 +42,12 @@
   - test framework                    -> jasmine
   - test runner/env-builder           -> testem
   - custom auto test-manifest builder -> app/spec/manifest_builder.js
+
+
+## To Build
+  - install `npm`
+  - run `npm update`
+
+## To Test
+   - install Testem: `npm install -g testem`
+   - run `testem`
