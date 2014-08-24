@@ -4,15 +4,16 @@ global.$                =   require('jquery')
 global.Backbone         =   require('backbone')
 Backbone.$              =   $
 
-require('./backbone_stuff.coffee')
-Add = require('./dep.coffee')
+console.log('running')
 
-add_plus_1 = (x,y) ->
-  Add.add(x,y)
+# basic backbone example files
+Data       = require('./data.coffee')
+Model      = require('./model.coffee')
+Collection = require('./collection.coffee')
+View       = require('./view.coffee')
 
-iterate = (array) ->
-  _.reduce array, ((memo, num) -> memo + num), 0
-
-module.exports.hello = 3
-module.exports.add_plus_1 = add_plus_1
-module.exports.iterate = iterate
+#main function goes here -->
+model = new Model({name: 'Andrew', occupation: 'Software Craftsman'})
+window.view = new View({model: model})
+console.log(window.view.el)
+window.view.render()
