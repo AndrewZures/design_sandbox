@@ -1,4 +1,4 @@
 node_modules/
-test_manifest.coffee
 bundle.js
 test_bundle.js
+test_manifest.coffee
