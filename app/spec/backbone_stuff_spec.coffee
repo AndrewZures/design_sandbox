@@ -1,11 +1,8 @@
+TestView = require('../src/backbone_stuff.coffee')
+
 describe 'backbone stuff tests', () ->
 
   it 'creates a view', () ->
-    view = Diluvia
+    view = new TestView()
     expect(view).not.toBe null
-
-    view2 = Diluvia.Hi = {}
-    expect(view2).not.toBe null
-
-    view3 = new Diluvia.Test.View()
-    expect(view3).not.toBe null
+    expect(view.what).toBe 1

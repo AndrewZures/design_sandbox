@@ -4,11 +4,6 @@ global.$                =   require('jquery')
 global.Backbone         =   require('backbone')
 Backbone.$              =   $
 
-#root
-global.Diluvia = {
-  Test: {}
-}
-
 require('./backbone_stuff.coffee')
 Add = require('./dep.coffee')
 

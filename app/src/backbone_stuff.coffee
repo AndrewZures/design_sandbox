@@ -1,7 +1,8 @@
-Diluvia.Test.View = Backbone.View.extend
+module.exports = Backbone.View.extend
   el: $ 'body'
 
   initialize: ->
+    @what = 1
     @render()
 
   render: ->
