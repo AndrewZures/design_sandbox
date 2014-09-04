@@ -3,16 +3,19 @@ var fs = require('fs');
 
 var this_file = 'manifest_builder.js';
 var input_path = 'app/spec/**/*.coffee';
-var output_file = 'test_manifest.coffee';
+var output_file = './spec_index.coffee';
 var output_path = "./" + output_file;
 var files_to_remove = [ this_file, output_file ];
 
-fs.writeFile(output_path, '');
+execute();
 
-glob(input_path, function(er, files) {
-  var filtered_files = filter_files(files);
-  write_files(filtered_files);
-});
+function execute(){
+  fs.writeFile(output_path, '');
+  glob(input_path, function(er, files) {
+    var filtered_files = filter_files(files);
+    write_files(filtered_files);
+  });
+}
 
 function write_files(files){
   for(var i = 0; i < files.length ; i++) {

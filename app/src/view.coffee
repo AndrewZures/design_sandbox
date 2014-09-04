@@ -1,9 +1,16 @@
+template = require('./some_template.html')
+
 module.exports = Backbone.View.extend
   el: $('#some-id')
-  template: _.template('name: <%= name %><br/> occupation: <%= occupation %>')
 
   initialize: ->
     _.bindAll(@, "render")
 
   render: ->
-    $(@el).html(@template(@model.toJSON()))
+    attrs  = {
+      name: 'hello',
+      occupation: 'awesome',
+      first:
+        second: 'first-second'
+    }
+    $(@el).html(template(attrs))

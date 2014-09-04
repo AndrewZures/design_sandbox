@@ -1,7 +1,7 @@
 Index =  require '../../src/index.coffee'
 Add =   require '../../src/dep.coffee'
 
-describe 'a test', () ->
+xdescribe 'a test', () ->
 
   it 'tests', () ->
     expect(Index.hello + 3).toEqual(6)

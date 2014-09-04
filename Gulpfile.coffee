@@ -1,31 +1,14 @@
-gulp    =  require 'gulp'
-shell   =  require 'gulp-shell'
-run_seq = require 'run-sequence'
+gulp               =  require 'gulp'
+run_seq            =  require 'run-sequence'
+browserify         =  require 'browserify'
+coffeeify          =  require 'coffeeify'
+run                =  require 'gulp-run'
+run_seq            =  require 'run-sequence'
 
-src_dir  = './app/src'
-spec_dir = './app/spec'
-index    = './app/src/index.coffee'
-output   = './bundle.js'
+gulp.task 'bundle-src', ->
+  run('browserify app/src/index.coffee -o bundle.js').exec()
 
-sources = {
-  bundle: 'bundle.js'
-}
+gulp.task 'bundle-specs', ->
+  run('node ./app/spec/manifest_builder.js').exec()
+  run('browserify app/src/index.coffee spec_index.coffee -o spec_bundle.js').exec()
 
-watches = {
-  javascripts: './app/**/*.{coffee, js}'
-}
-
-gulp.task 'watch', ->
-  gulp.watch watches.javascripts ['javascript']
-
-gulp.task 'default', ->
-  run_seq 'javascript', 'start'
-
-gulp.task 'javascript',
-  shell.task ["browserify -t coffeeify #{index} -o #{output}"]
-
-gulp.task 'clean',
-  shell.task ["rm #{output}"]
-
-gulp.task 'start',
-  shell.task ["open hi.html"]

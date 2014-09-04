@@ -1,4 +1,4 @@
-closure = {
+module.exports = {
   add: (x,y) ->
     really_add(x,y)
 
@@ -9,5 +9,3 @@ closure = {
 z = 1
 really_add = (x,y) ->
   x + y + z
-
-module.exports = closure

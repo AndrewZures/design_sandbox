@@ -3,22 +3,28 @@
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
+  "author": "Andrew Zures",
+  "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "coffeeify": "^0.7.0",
+    "backbone": "^1.1.2",
+    "browserify": "~5.11.0",
     "coffee-script": "^1.7.1",
+    "coffeeify": "^0.7.0",
     "jquery": "^2.1.1",
+    "gulp-run": "^1.6.4",
+    "run-sequence": "^0.3.6",
     "underscore": "^1.6.0",
-    "backbone": "^1.1.2"
+    "handlebars" : "^2.0.0",
+    "hbsfy" : "^2.1.0"
   },
   "devDependencies": {
     "gulp": "^3.5.2",
-    "gulp-shell": "^0.2.9",
-    "browserify": "^3.0.0",
     "glob": "^4.0.5"
   },
-  "author": "Andrew Zures",
-  "license": "ISC"
+  "browserify": {
+    "transform" : [["hbsfy", { "extensions": ["html"] }], "coffeeify"]
+  }
 }

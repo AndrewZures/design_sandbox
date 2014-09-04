@@ -1,9 +1,9 @@
 framework: jasmine
-before_tests: node app/spec/manifest_builder.js; browserify -t coffeeify app/src/index.coffee test_manifest.coffee -d -o test_bundle.js
-on_exit: rm -rf test_bundle.js test_manifest.coffee
+before_tests: gulp bundle-specs
+on_exit: rm spec_bundle.js
 src_files:
   - app/**
 launch_in_dev:
   - PhantomJS
 serve_files:
-  - test_bundle.js
+  - spec_bundle.js

@@ -1,8 +1,11 @@
-TestView = require('../src/backbone_stuff.coffee')
+TestView = require('../src/view.coffee')
 
 describe 'backbone stuff tests', () ->
 
   it 'creates a view', () ->
     view = new TestView()
     expect(view).not.toBe null
-    expect(view.what).toBe 1
+    expect(1).toBe 1
+
+  it 'adds', () ->
+    expect(2).toEqual 2

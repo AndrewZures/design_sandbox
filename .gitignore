@@ -1,4 +1,4 @@
 node_modules/
 bundle.js
-test_bundle.js
-test_manifest.coffee
+spec_bundle.js
+spec_index.coffee
