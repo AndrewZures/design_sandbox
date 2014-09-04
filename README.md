@@ -47,7 +47,13 @@
 ## To Build
   - install `npm`
   - run `npm update`
+  - install Browserify `npm install -g browserify`
+
+## To Bundle Source
+  - run `gulp bundle-src` which will output `bundle.js`
+  - include `bundle.js` in your html index file (or other initial load file)
 
 ## To Test
+   - do everything in the 'To Build' section
    - install Testem: `npm install -g testem`
    - run `testem`
