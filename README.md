@@ -55,6 +55,11 @@
   - include `bundle.js` in your html index file (or other initial load file)
 
 ## To Test
-   - do everything in the 'To Build' section
-   - install Testem: `npm install -g testem`
-   - run `testem`
+  - do everything in the 'To Build' section
+  - install Testem: `npm install -g testem`
+  - run `testem`
+
+## Todos
+  - clean up custom test-mainfest builder
+  - talk to brian about how to go about getting all the specs in
+  - move to diluvia
