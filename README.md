@@ -62,4 +62,7 @@
 ## Todos
   - clean up custom test-mainfest builder
   - talk to brian about how to go about getting all the specs in
+  - adds scss support
+    - gulp compiles scss to stylesheets, then css is added via cssify
+  - add watchers - javascript, templates, css
   - move to diluvia
