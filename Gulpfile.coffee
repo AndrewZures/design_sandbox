@@ -5,7 +5,7 @@ coffeeify          =  require 'coffeeify'
 run                =  require 'gulp-run'
 run_seq            =  require 'run-sequence'
 
-gulp.task 'bundle-src', ->
+gulp.task 'bundle-source', ->
   run('browserify app/src/index.coffee -o bundle.js').exec()
 
 gulp.task 'bundle-specs', ->

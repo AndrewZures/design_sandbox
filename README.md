@@ -34,9 +34,10 @@
 ### Dev Tools
   - language            -> coffeescript
   - task runner         -> gulp
-  - module system       -> browserify
-  - Data/Action system   -> backbone
+  - module              -> browserify
+  - framework/library   -> backbone
   - templating language -> mustache
+  - template bundler    -> hbsfy
 
 ### Testing
   - test framework                    -> jasmine
