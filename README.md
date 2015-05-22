@@ -35,9 +35,7 @@
   - language            -> coffeescript
   - task runner         -> gulp
   - module              -> browserify
-  - framework/library   -> backbone
-  - templating language -> mustache
-  - template bundler    -> hbsfy
+  - framework           -> React/Flux
 
 ### Testing
   - test framework                    -> jasmine
@@ -61,8 +59,6 @@
 
 ## Todos
   - clean up custom test-mainfest builder
-  - talk to brian about how to go about getting all the specs in
-  - adds scss support
+  - add scss support
     - gulp compiles scss to stylesheets, then css is added via cssify
-  - add watchers - javascript, templates, css
   - move to diluvia
