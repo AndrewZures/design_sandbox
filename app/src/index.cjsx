@@ -1,34 +1,31 @@
 require('polyfill-function-prototype-bind')
 
-React   = require("react")
+global.React   = require("react")
 Router  = require("react-router")
 
 Link    = Router.Link
 Route   = Router.Route
 RouteHandler = Router.RouteHandler
 
+WelcomePage = require("./pages/welcome.cjsx")
+
 App = React.createClass
   render: ->
     <div>
       <header>
         <ul>
-          <li><Link to="hey">Hey</Link></li>
           <li><Link to="app">Dashboard</Link></li>
+          <li><Link to="welcome">Welcome</Link></li>
         </ul>
       </header>
 
       <RouteHandler/>
     </div>
 
-Something = React.createClass
-  render: ->
-    <div>
-      <h2>hey there</h2>
-    </div>
 
 routes = (
   <Route name="app" path="/" handler={App}>
-    <Route name="hey" handler={Something} />
+    <Route name="welcome" handler={WelcomePage}/>
   </Route>
 )
 
