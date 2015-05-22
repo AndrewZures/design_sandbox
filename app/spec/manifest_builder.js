@@ -43,5 +43,3 @@ function should_remove(file, rem_files){
 
   return false;
 }
-
-
