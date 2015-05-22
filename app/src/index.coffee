@@ -1,2 +1,5 @@
-global._                =   require('underscore')
-global.$                =   require('jquery')
+require('polyfill-function-prototype-bind')
+
+global.$ = require('jquery')
+
+Router = require("./router.cjsx")

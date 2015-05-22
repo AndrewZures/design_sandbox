@@ -9,18 +9,29 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "browserify"       : "^10.2.0",
-    "jquery"           : "^2.1.1",
-    "gulp-run"         : "^1.6.4",
-    "run-sequence"     : "^0.3.6",
-    "lodash"           : "^3.9.1",
-    "coffee-reactify"  : "^3.0.0"
+    "browserify": "^10.2.0",
+    "coffee-reactify": "^3.0.0",
+    "coffee-script": "^1.9.2",
+    "coffeeify": "^1.1.0",
+    "gulp-run": "^1.6.4",
+    "jquery": "^2.1.1",
+    "lodash": "^3.9.1",
+    "polyfill-function-prototype-bind": "0.0.1",
+    "react-router": "^0.13.3",
+    "run-sequence": "^0.3.6"
   },
   "devDependencies": {
     "gulp": "^3.5.2",
     "glob": "^4.0.5"
   },
   "browserify": {
-    "transform" : [ [ "coffee-reactify", { "ext": ".cjsx" } ] ]
+    "transform": [
+      [
+        "coffee-reactify",
+        {
+          "ext": ".cjsx"
+        }
+      ]
+    ]
   }
 }
