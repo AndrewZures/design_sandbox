@@ -1,6 +1,6 @@
 {
   "name": "testfrontend",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "author": "Andrew Zures",
@@ -9,23 +9,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "backbone"      : "^1.1.2",
-    "browserify"    : "~5.11.0",
-    "coffee-script" : "^1.7.1",
-    "coffeeify"     : "^0.7.0",
-    "jquery"        : "^2.1.1",
-    "gulp-run"      : "^1.6.4",
-    "run-sequence"  : "^0.3.6",
-    "underscore"    : "^1.6.0",
-    "handlebars"    : "^2.0.0",
-    "hbsfy"         : "^2.1.0",
-    "coffee-react"  : "^3.2.0"
+    "browserify"       : "^10.2.0",
+    "jquery"           : "^2.1.1",
+    "gulp-run"         : "^1.6.4",
+    "run-sequence"     : "^0.3.6",
+    "lodash"           : "^3.9.1",
+    "coffee-reactify"  : "^3.0.0"
   },
   "devDependencies": {
     "gulp": "^3.5.2",
     "glob": "^4.0.5"
   },
   "browserify": {
-    "transform" : [["hbsfy", { "extensions": ["html"] }], "coffeeify"]
+    "transform" : [ [ "coffee-reactify", { "ext": ".cjsx" } ] ]
   }
 }

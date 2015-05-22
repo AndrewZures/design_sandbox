@@ -1,4 +1,4 @@
-describe 'backbone stuff tests', () ->
+describe 'backbone stuff tests', ->
 
-  it 'adds', () ->
+  it 'adds', ->
     expect(2).toEqual 2
