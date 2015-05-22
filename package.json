@@ -25,6 +25,7 @@
     "glob": "^4.0.5"
   },
   "browserify": {
+    "debug" : "true",
     "transform": [
       [
         "coffee-reactify",
