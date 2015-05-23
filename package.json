@@ -5,10 +5,9 @@
   "main": "index.js",
   "author": "Andrew Zures",
   "license": "ISC",
-  "engine": "node 0.10.0",
   "scripts": {
     "start": "node index.js",
-    "postinstall": "gulp bundle-source"
+    "postinstall": "node api.js > bundle.js"
   },
   "dependencies": {
     "browserify": "^10.2.0",

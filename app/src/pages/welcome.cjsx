@@ -1,4 +1,4 @@
-require ('../../css/pages/welcome.scss')
+require ('pages/welcome.scss')
 
 WelcomePage = React.createClass
   render: ->

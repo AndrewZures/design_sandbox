@@ -1,4 +1,4 @@
-require ('../../css/pages/dashboard.scss')
+require ('pages/dashboard.scss')
 
 Dashboard = React.createClass
   render: ->
