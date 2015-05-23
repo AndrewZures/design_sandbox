@@ -1,5 +1,7 @@
 require('polyfill-function-prototype-bind')
 
+require('../css/base.scss')
+
 global.React   = require("react")
 Router  = require("react-router")
 
@@ -7,6 +9,7 @@ Link    = Router.Link
 Route   = Router.Route
 RouteHandler = Router.RouteHandler
 
+DashboardPage = require("./pages/dashboard.cjsx")
 WelcomePage = require("./pages/welcome.cjsx")
 
 App = React.createClass
@@ -14,7 +17,7 @@ App = React.createClass
     <div>
       <header>
         <ul>
-          <li><Link to="app">Dashboard</Link></li>
+          <li><Link to="dashboard">Dashboard</Link></li>
           <li><Link to="welcome">Welcome</Link></li>
         </ul>
       </header>
@@ -25,7 +28,8 @@ App = React.createClass
 
 routes = (
   <Route name="app" path="/" handler={App}>
-    <Route name="welcome" handler={WelcomePage}/>
+    <Route name="dashboard" handler={DashboardPage} />
+    <Route name="welcome" handler={WelcomePage} />
   </Route>
 )
 

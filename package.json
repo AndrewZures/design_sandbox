@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "Andrew Zures",
   "license": "ISC",
+  "engine": "node 0.10.0",
   "scripts": {
     "start": "node index.js",
     "postinstall": "gulp bundle-source"
@@ -23,17 +24,15 @@
     "polyfill-function-prototype-bind": "0.0.1",
     "react-router": "^0.13.3",
     "run-sequence": "^0.3.6",
-    "glob": "^4.0.5"
+    "glob": "^4.0.5",
+    "sassify": "0.8.0",
+    "scssify": "^0.2.2"
   },
   "browserify": {
     "debug": "true",
     "transform": [
-      [
-        "coffee-reactify",
-        {
-          "ext": ".cjsx"
-        }
-      ]
+      [ "coffee-reactify", { "ext": ".cjsx" } ],
+      [ "scssify", { "ext": ".scss" } ]
     ]
   }
 }

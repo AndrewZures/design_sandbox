@@ -1,6 +1,8 @@
+require ('../../css/pages/welcome.scss')
+
 WelcomePage = React.createClass
   render: ->
-    <div>
+    <div className="welcome-page">
       <h2>Welcome</h2>
     </div>
 
