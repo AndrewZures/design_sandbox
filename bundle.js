@@ -3,7 +3,7 @@ var WelcomePage;
 
 WelcomePage = React.createClass({
   render: function() {
-    return React.createElement("div", null, React.createElement("h2", null, "hey there"));
+    return React.createElement("div", null, React.createElement("h2", null, "Welcome"));
   }
 });
 
