@@ -1,6 +1,6 @@
 Toolbar = React.createClass
   render: ->
-    <div className="main-toolbar">
+    <div className="main-toolbar shadow">
       <ul className="main-toolbar-list">
         <li className="main-toolbar-list__item"><a href=''>One</a></li>
         <li className="main-toolbar-list__item"><a href=''>Two</a></li>

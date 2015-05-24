@@ -418,10 +418,26 @@ html {
   box-sizing: border-box;
 }
 
+.shadow {
+  -webkit-box-shadow: 3px 3px 5px 2px #ccc;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 2px #ccc;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 2px #ccc;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
 .main-toolbar {
-  margin: 0 auto;
-  max-width: 48rem;
-  width: 90%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  height: 7%;
+}
+
+.main-toolbar .main-toolbar-list {
+  font-size: 120%;
 }
 
 .main-toolbar .main-toolbar-list .main-toolbar-list__item {
@@ -439,6 +455,11 @@ html {
   color: #8C95FF;
 }
 
+.main-content {
+  margin-top: 7%;
+}
+
 .main-content p {
-  margin: 3%;
+  margin-right: 3%;
+  margin-left: 3%;
 }
