@@ -7,6 +7,13 @@ WelcomePage = require("pages/welcome.cjsx")
 
 Hey = React.createClass
   render: ->
-    <h2>Hey There</h2>
+    <div>
+      <h2>Hey There</h2>
+      <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ul>
+    </div>
 
 React.render <Hey />, document.getElementById('some-id')
