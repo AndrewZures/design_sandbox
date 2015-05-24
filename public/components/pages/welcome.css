@@ -411,6 +411,12 @@ html {
   }
 }
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body h2 {
   color: #2B8EE8;
 }
@@ -419,6 +425,13 @@ body li {
   color: #8C95FF;
 }
 
+.welcome_page {
+  margin: 0 auto;
+  max-width: 48rem;
+  width: 90%;
+}
+
 .welcome_page .welcome_list .welcome_list__item {
+  list-style-type: none;
   color: #E33DFF;
 }

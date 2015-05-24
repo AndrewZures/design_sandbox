@@ -1,10 +1,14 @@
 @import "../../main";
 
 .welcome_page {
+  margin: 0 auto;
+  max-width: 48rem;
+  width: 90%;
 
   .welcome_list {
 
     .welcome_list__item {
+      list-style-type: none;
       color: $dark_pink;
     }
   }
