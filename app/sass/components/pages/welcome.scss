@@ -1,15 +1,24 @@
 @import "../../main";
 
-.welcome_page {
+.main-toolbar {
   margin: 0 auto;
   max-width: 48rem;
   width: 90%;
 
-  .welcome_list {
+  .main-toolbar-list {
 
-    .welcome_list__item {
+    .main-toolbar-list__item {
+      display: inline;
       list-style-type: none;
-      color: $dark_pink;
+
+      a {
+        color: $dark_pink;
+        text-decoration: none;
+
+        &:hover {
+          color: $light_purple;
+        }
+      }
     }
   }
 

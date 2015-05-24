@@ -3,6 +3,7 @@
 
 html {
   font-size: 100%;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
 }
 
 @media(min-width: 40rem){
@@ -17,15 +18,4 @@ html {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-body {
-
-  h2 {
-    color: $dark_blue;
-  }
-
-  li {
-    color: $light_purple;
-  }
 }

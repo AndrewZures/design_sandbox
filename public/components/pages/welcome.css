@@ -397,6 +397,7 @@ th {
 
 html {
   font-size: 100%;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 @media (min-width: 40rem) {
@@ -417,21 +418,22 @@ html {
   box-sizing: border-box;
 }
 
-body h2 {
-  color: #2B8EE8;
-}
-
-body li {
-  color: #8C95FF;
-}
-
-.welcome_page {
+.main-toolbar {
   margin: 0 auto;
   max-width: 48rem;
   width: 90%;
 }
 
-.welcome_page .welcome_list .welcome_list__item {
+.main-toolbar .main-toolbar-list .main-toolbar-list__item {
+  display: inline;
   list-style-type: none;
+}
+
+.main-toolbar .main-toolbar-list .main-toolbar-list__item a {
   color: #E33DFF;
+  text-decoration: none;
+}
+
+.main-toolbar .main-toolbar-list .main-toolbar-list__item a:hover {
+  color: #8C95FF;
 }
