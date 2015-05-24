@@ -11,4 +11,3 @@ gulp.task 'bundle-source', ->
 gulp.task 'bundle-specs', ->
   run('node ./app/spec/manifest_builder.js').exec()
   run('browserify app/src/index.cjsx spec_index.coffee -o spec_bundle.js').exec()
-

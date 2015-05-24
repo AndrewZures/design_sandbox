@@ -6,10 +6,17 @@ var opts = { debug: "true",
              paths: ["./app/spec", "./app/src", "./app/sass"],
              cache: {},
              packageCache: {},
-             poll: true
+             poll: true,
+             fullPaths: true
             }
 
+var rebundle = function(w){
+  w.bundle().pipe(fs.createWriteStream(__dirname + '/bundle.js'));
+}
+
+console.log("bundling");
 var b = browserify(opts);
 b.add("./app/src/index.cjsx")
 w = watchify(b)
-w.bundle().pipe(fs.createWriteStream(__dirname + '/bundle.js'));
+w.on("update", function(){ rebundle(w) });
+rebundle(w);
