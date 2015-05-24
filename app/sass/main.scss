@@ -1,6 +1,18 @@
 @import "vendor/normalize";
 @import "settings";
 
+html {
+  font-size: 100%;
+}
+
+@media(min-width: 40rem){
+  html { font-size: 112%; }
+}
+
+@media(min-width: 64rem){
+  html { font-size: 120%; }
+}
+
 body {
 
   h2 {
