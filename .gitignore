@@ -1,4 +1,5 @@
 node_modules/
 bundle.js
+public/**/*.css
 spec_bundle.js
 spec_index.coffee
