@@ -5,15 +5,10 @@ global.React = require("react")
 DashboardPage = require("pages/dashboard.cjsx")
 WelcomePage = require("pages/welcome.cjsx")
 
-Hey = React.createClass
+Main = React.createClass
   render: ->
     <div>
-      <h2>Hey There</h2>
-      <ul>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
-      </ul>
+      <WelcomePage />
     </div>
 
-React.render <Hey />, document.getElementById('some-id')
+React.render <Main />, document.getElementById('some-id')

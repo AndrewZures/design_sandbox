@@ -1,9 +1,7 @@
 Dashboard = React.createClass
   render: ->
-    <div>
-      <div className="dashboard-page">
-        <h2>Dashboard</h2>
-      </div>
+    <div className="dashboard-page">
+      <h2>Dashboard</h2>
     </div>
 
 module.exports = Dashboard

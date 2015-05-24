@@ -1,8 +1,13 @@
+@import "vendor/normalize";
+@import "components/settings";
+
 body {
 
   h2 {
-    color: grey;
+    color: $dark_blue;
   }
 
-  background-image: url("/concrete.png");
+  li {
+    color: $light_purple;
+  }
 }
