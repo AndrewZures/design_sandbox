@@ -427,6 +427,7 @@ html {
 .main-toolbar .main-toolbar-list .main-toolbar-list__item {
   display: inline;
   list-style-type: none;
+  margin: 1%;
 }
 
 .main-toolbar .main-toolbar-list .main-toolbar-list__item a {
@@ -436,4 +437,8 @@ html {
 
 .main-toolbar .main-toolbar-list .main-toolbar-list__item a:hover {
   color: #8C95FF;
+}
+
+.main-content p {
+  margin: 3%;
 }

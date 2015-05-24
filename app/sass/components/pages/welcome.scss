@@ -10,6 +10,7 @@
     .main-toolbar-list__item {
       display: inline;
       list-style-type: none;
+      margin: 1%;
 
       a {
         color: $dark_pink;
@@ -21,6 +22,12 @@
       }
     }
   }
+}
 
+.main-content {
+
+  p {
+    margin: 3%;
+  }
 }
 
