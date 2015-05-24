@@ -1,5 +1,3 @@
-require ('pages/dashboard.scss')
-
 Dashboard = React.createClass
   render: ->
     <div>

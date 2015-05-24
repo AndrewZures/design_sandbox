@@ -1,0 +1,7 @@
+body {
+  background-image: url("/concrete.png");
+}
+
+body h2 {
+  color: green;
+}
