@@ -1,6 +1,7 @@
 @import "../../main";
 
-$toolbar_height: 7%;
+$toolbar_height: 40px;
+$toolbar_overhang: $toolbar_height + 20px;
 
 .shadow {
   $right_shadow:  2px 0px 5px 2px #ccc;
@@ -26,7 +27,6 @@ $toolbar_height: 7%;
   width: 96%;
   z-index: 1;
 
-
   .toolbar {
     margin: auto;
     font-size: 117%;
@@ -38,7 +38,7 @@ $toolbar_height: 7%;
     }
 
     .toolbar__item {
-      height: 40px;
+      height: $toolbar_height;
       border:1px solid #ccc;
       color: grey;
 
@@ -51,7 +51,7 @@ $toolbar_height: 7%;
 }
 
 .main-content {
-  margin-top: $toolbar_height;
+  margin-top: $toolbar_overhang;
 
   p {
     margin-right: 3%;
