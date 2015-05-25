@@ -13,5 +13,4 @@ Content = React.createClass
       <p>Sed suscipit nulla non aliquet molestie. Morbi lacinia eros ac velit eleifend, et eleifend ligula ornare. Ut tristique, ex et rutrum mattis, mauris velit mattis libero, a luctus enim sem ac dolor. Vivamus ut magna quis sapien facilisis laoreet. Proin vestibulum accumsan elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat aliquam diam, et tristique mauris accumsan rutrum. Ut eget cursus lorem. Curabitur laoreet odio nec malesuada blandit. Phasellus ultrices tellus id orci ullamcorper, quis efficitur arcu blandit. Curabitur ut tellus tempor, scelerisque neque a, elementum libero. Vivamus ultrices fermentum libero vel varius. Pellentesque vitae placerat metus. Praesent at enim sed eros pharetra blandit quis sed libero.</p>
     </div>
 
-
 module.exports = Content
