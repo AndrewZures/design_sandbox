@@ -52,9 +52,6 @@ $toolbar_overhang: $toolbar_height + 20px;
 
 .main-content {
   margin-top: $toolbar_overhang;
-
-  p {
-    margin-right: 3%;
-    margin-left: 3%;
-  }
+  margin-right: 3%;
+  margin-left: 3%;
 }
