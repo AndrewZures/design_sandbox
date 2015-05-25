@@ -1,12 +1,19 @@
 Toolbar = React.createClass
   render: ->
-    <div className="toolbar-container shadow fixed-to-top">
-      <ul className="toolbar">
-        <li><a href=''><div className="toolbar__item center">One</div></a></li>
-        <li><a href=''><div className="toolbar__item center">Two</div></a></li>
-        <li><a href=''><div className="toolbar__item center">Three</div></a></li>
-        <li><a href=''><div className="toolbar__item center">Four</div></a></li>
-      </ul>
+    <div>
+      <header>
+        <div className="toolbar-container shadow fixed-to-top">
+          <ul className="toolbar">
+            <li><Link to="app"      className="toolbar__item center">One</Link></li>
+            <li><Link to="inbox"    className="toolbar__item center">Two</Link></li>
+            <li><Link to="calendar" className="toolbar__item center">Three</Link></li>
+          </ul>
+
+        </div>
+      </header>
+      <div className="main-content">
+        <RouteHandler />
+      </div>
     </div>
 
 module.exports = Toolbar
