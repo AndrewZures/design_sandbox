@@ -1,13 +1,11 @@
 Toolbar = React.createClass
   render: ->
-    <div className="main-toolbar shadow">
-      <ul className="main-toolbar-list">
-        <li className="main-toolbar-list__item"><a href=''>One</a></li>
-        <li className="main-toolbar-list__item"><a href=''>Two</a></li>
-        <li className="main-toolbar-list__item"><a href=''>Three</a></li>
-        <li className="main-toolbar-list__item"><a href=''>Four</a></li>
-        <li className="main-toolbar-list__item"><a href=''>Five</a></li>
-        <li className="main-toolbar-list__item"><a href=''>Six</a></li>
+    <div className="toolbar-container shadow fixed-to-top">
+      <ul className="toolbar">
+        <li><a href=''><div className="toolbar__item center">One</div></a></li>
+        <li><a href=''><div className="toolbar__item center">Two</div></a></li>
+        <li><a href=''><div className="toolbar__item center">Three</div></a></li>
+        <li><a href=''><div className="toolbar__item center">Four</div></a></li>
       </ul>
     </div>
 

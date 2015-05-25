@@ -12,38 +12,39 @@ $toolbar_height: 7%;
   box-shadow:         $right_shadow, $left_shadow, $bottom_shadow;
 }
 
-.main-toolbar {
-  background-color: white;
-  height: $toolbar_height;
-  left: 0;
+.fixed-to-top {
+  position: fixed;
   margin-left: auto;
   margin-right: auto;
-  position: fixed;
+  left: 0;
   right: 0;
   top: 0;
+}
+
+.toolbar-container {
+  background-color: white;
   width: 96%;
   z-index: 1;
 
-  ul {
-    padding: 0px 0px 0px 0px;
-  }
 
-  .main-toolbar-list {
+  .toolbar {
+    margin: auto;
     font-size: 117%;
     display: flex;
     flex-direction: row;
 
-    .main-toolbar-list__item {
+    li {
       flex-grow: 1;
-      text-align: center;
+    }
 
-      a {
-        color: $dark_pink;
-        text-decoration: none;
+    .toolbar__item {
+      height: 40px;
+      border:1px solid #ccc;
+      color: grey;
 
-        &:hover {
-          color: $light_purple;
-        }
+      &:hover {
+        color: white;
+        background-color: grey;
       }
     }
   }
@@ -57,4 +58,3 @@ $toolbar_height: 7%;
     margin-left: 3%;
   }
 }
-
